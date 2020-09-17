@@ -1,2 +1,3 @@
 # jest-testing
-The Odin Project: Get comfortable with using Jest.
+
+Practice using a testing framework (Jest in this case).
