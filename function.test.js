@@ -28,3 +28,13 @@ test('Test calculator multiplication', () => {
 test('Test calculator division', () => {
   expect(calculator.divide(10, 5)).toBe(2);
 });
+
+// Testing caesarCipher function.
+const encryption = require('./caesarCipher');
+
+test('Test ciphering of text', () => {
+  expect(encryption('AAA')).toBe('BBB');
+  expect(encryption('aaa')).toBe('bbb');
+  expect(encryption('ZZZ')).toBe('AAA');
+  expect(encryption('z.z.z')).toBe('a.a.a');
+});
