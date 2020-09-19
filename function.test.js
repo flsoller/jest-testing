@@ -38,3 +38,24 @@ test('Test ciphering of text', () => {
   expect(encryption('ZZZ')).toBe('AAA');
   expect(encryption('z.z.z')).toBe('a.a.a');
 });
+
+// Testing array analysis methods.
+const analyze = require('./arrayAnalysis');
+
+test('Return object from array', () => {
+  expect(Object);
+});
+test('Object has keys with correct values', () => {
+  expect(analyze([1, 2, 3, 4])).toStrictEqual({
+    average: 2.5,
+    min: 1,
+    max: 4,
+    length: 4,
+  });
+  expect(analyze([105, 210, 40, 1])).toStrictEqual({
+    average: 89,
+    min: 1,
+    max: 210,
+    length: 4,
+  });
+});
